@@ -1,0 +1,85 @@
+html,
+body {
+  padding: 12px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.kotak {
+  width: 300px;
+  height: 300px;
+}
+
+.hijau {
+  background-color: green;
+  width: 50%;
+}
+
+.biru {
+  background-color: blue;
+  width: 50%;
+}
+
+.kuning {
+  background-color: yellow;
+  width: 100%;
+}
+
+.pink {
+  background-color: pink;
+  width: 100%;
+}
+
+.container-section-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  gap: 10px;
+}
+
+.container-section-2 {
+  width: 20%;
+}
+
+.container-section-3 {
+  width: 40%;
+}
+
+.container-first-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid black;
+  gap: 20px;
+}
+
+.ungu {
+  background-color: purple;
+  width: 70%;
+}
+
+.abu {
+  background-color: rgb(245, 237, 237);
+  width: 30%;
+  padding: 16px;
+}
+
+.custom-margin{
+  margin-top: 24px;
+}
+
+
+/* 0 - 1023 => mobile screen */
+@media (max-width: 1024px) {
+  .container-first-row {
+    flex-direction: column;
+  }
+
+  .container-section-1,
+  .container-section-2,
+  .container-section-3, .ungu, .abu {
+    width: 100%;
+  }
+}
